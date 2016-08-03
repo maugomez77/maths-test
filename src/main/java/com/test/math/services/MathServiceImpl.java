@@ -52,6 +52,8 @@ public class MathServiceImpl implements MathService {
 			logger.debug("Previous Computation + C * X = " + root);
 			root += coefficients[3];
 			logger.debug("Previous Computation + D = " + root);
+			//root = Math.round(root * 10) / 10.0d;
+			//logger.debug("Rounded Computations = " + root);
 			if (root == 0) {
 				response = new SolutionResponse(i);
 				break;

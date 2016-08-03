@@ -30,6 +30,11 @@ public class SolutionResponse {
         this.root = root;
     }
 
+    /**
+     * Getter for our solution to be exposed on the API
+     *
+     * @return float
+     */
     public float getRoot() {
         return root;
     }
