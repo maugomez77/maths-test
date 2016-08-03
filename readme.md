@@ -11,8 +11,8 @@ Expose this solver through a REST API with following signature.
 
 #### Prerequisites
 
-- Java 8
-- Maven > 3.0
+- Java 8  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- Maven >= 3.0  (https://maven.apache.org/download.cgi?Preferred=ftp://mirror.reverse.net/pub/apache/)
 
 #### From terminal
 

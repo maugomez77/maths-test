@@ -38,4 +38,10 @@ public class SolutionResponse {
     public float getRoot() {
         return root;
     }
+
+	@Override
+	public String toString() {
+		return "SolutionResponse [root=" + root + "]";
+	}
+    
 }

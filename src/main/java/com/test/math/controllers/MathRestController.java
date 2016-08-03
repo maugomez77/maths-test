@@ -7,11 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -40,6 +38,9 @@ public class MathRestController {
 	 */
 	@RequestMapping(value = "/v1/solver", method=RequestMethod.POST, headers="Accept=application/json")
 	public SolutionResponse calculateEquation(@RequestBody EquationRequest equationRequest) {
-		return mathService.calculateEquation(equationRequest);
+		logger.debug("Enter to the calculation method with values " + equationRequest);
+		SolutionResponse response = mathService.calculateEquation(equationRequest);
+		logger.debug("Exit from the calculation method with response: " + response);
+		return response;
 	}
 }

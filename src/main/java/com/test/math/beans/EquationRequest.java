@@ -1,5 +1,7 @@
 package com.test.math.beans;
 
+import java.util.Arrays;
+
 /**
  * Created by mgomez on 8/2/16.
  */
@@ -79,4 +81,11 @@ public class EquationRequest {
     public void setSearchRange(int[] searchRange) {
         this.searchRange = searchRange;
     }
+
+	@Override
+	public String toString() {
+		return "EquationRequest [coefficients=" + Arrays.toString(coefficients) + ", searchRange="
+				+ Arrays.toString(searchRange) + "]";
+	}
+  
 }
