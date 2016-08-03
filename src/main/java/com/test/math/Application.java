@@ -1,4 +1,4 @@
-package com.narvar.contacts;
+package com.test.math;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

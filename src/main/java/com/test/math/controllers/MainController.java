@@ -1,4 +1,4 @@
-package com.narvar.contacts.controllers;
+package com.test.math.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
